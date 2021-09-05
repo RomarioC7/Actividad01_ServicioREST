@@ -11,31 +11,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.empresa.entity.Alumno;
-import com.empresa.service.AlumnoService;
+import com.empresa.entity.Medicamento;
+import com.empresa.service.MedicamentoService;
 
 @RestController
-@RequestMapping("/rest/alumno")
-public class AlumnoController {
+@RequestMapping("/rest/medicamento")
+public class MedicamentoController {
 
 	@Autowired
-	private AlumnoService service;
+	private MedicamentoService service;
 
 	@GetMapping
 	@ResponseBody
-	public ResponseEntity<List<Alumno>> listaAlumno(){
-		List<Alumno> lista = service.listaAlumno();
+	public ResponseEntity<List<Medicamento>> listaMedicamento(){
+		List<Medicamento> lista = service.listaMedicamento();
 		return ResponseEntity.ok(lista);
 	}
 
 	@PostMapping
 	@ResponseBody
-	public ResponseEntity<Alumno> insertaAlumno(@RequestBody Alumno obj){
+	public ResponseEntity<Medicamento> insertaMedicamento(@RequestBody Medicamento obj){
 		if (obj == null) {
 			return ResponseEntity.noContent().build();	
 		}else {
-			obj.setIdAlumno(0);
-			Alumno objSalida = service.insertaActualizaAlumno(obj);
+			obj.setIdMedicamento(0);
+			Medicamento objSalida = service.insertaMedicamento(obj);
 			return ResponseEntity.ok(objSalida);
 		}
 	}
