@@ -1,6 +1,6 @@
-# DAWII-Sesion01Inicio
-### Servicio Rest - Inicial
+# DAWII
+### Servicio Rest - Actividad I
 
 ## Autor ✒️
 
-* **Jorge Jacinto ** - [jorgejacinto9701](https://github.com/jorgejacinto9701)
+* **Romario Castro
