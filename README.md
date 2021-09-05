@@ -1,6 +1,6 @@
 # DAWII
 ### Servicio Rest - Actividad I
 
-## Autor ✒️
+## Autor 
 
 * **Romario Castro
